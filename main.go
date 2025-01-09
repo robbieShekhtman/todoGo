@@ -33,7 +33,7 @@ func main() {
 			todos.Add(title)
 			fmt.Println("Task added successfully!")
 		case "2":
-			fmt.Print("Enter task index to delete: ")
+			fmt.Print("Enter task index to delete(starting at 1): ")
 			scanner.Scan()
 			index, err := strconv.Atoi(strings.TrimSpace(scanner.Text()))
 			if err != nil {
